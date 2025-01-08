@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+header {
+    background-color: white;
+    padding: 10px 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+.profile-icon {
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-left: auto;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-color: #0f3b85;
+    color: white;
+    padding: 50px 20px;
+    height: 560px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.apply-btn {
+    background-color: #ffc107;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+.apply-btn:hover {
+    background-color: #ffa000;
+}
+
+/* Card Preview Section */
+.card-preview {
+    margin-top: 30px;
+}
+
+.card-preview img {
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.logo {
+    position: absolute;
+    left: 95%;
+    font-size: 30px;
+}
+
+a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+i {
+    margin-top: 70px;
+}
+
+#sub-item-menu {
+    display: none;
+    top: 76px;
+    /* box-shadow: 10px 10px 5px 2px whitesmoke; */
+    background-color: whitesmoke;
+    width: 1200px;
+
+}
+
+
+
+.menu-main {
+    display: flex;
+}
+
+#second-item:hover #sub-item-menu {
+    display: block;
+    position: absolute;
+}
+
+#sub-iten-menu:hover {
+    display: flex;
+}
+
+.sub-item1 {
+    padding: 10px;
+    width: 800px;
+
+}
+
+.card-preview {
+
+    border-radius: 100px;
+}
+
+
+hr {
+    color: yellow;
+}
+
+nav {
+    padding: 5px;
+}
+
+#underline:hover {
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+
+#underline1:hover {
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    width: 100%;
+}
+
+
+/* ------------------------------------------------------------------------ */
+
+.heading {
+    font-weight: 500;
+}
+
+#msg {
+    font-size: 30px;
+    color: blue;
+}
+
+.icon-link {
+    text-decoration: none;
+}
+
+
+
+/* ---------------------------Responsive Part-------------------------------- */
+
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero .apply-btn {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .row-cols-lg-3 {
+        flex-wrap: wrap;
+    }
+
+    .feature {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 30px 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero .apply-btn {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+}
